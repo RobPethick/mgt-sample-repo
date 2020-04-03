@@ -1,0 +1,16 @@
+module.exports = {
+    presets: [
+      [
+        '@babel/preset-env',
+        {
+          useBuiltIns: 'entry',
+          targets: {
+            ie: '11',
+            chrome: '58',
+          }
+        }
+      ],
+      '@babel/preset-typescript',
+      '@babel/preset-react'
+    ],
+  };
